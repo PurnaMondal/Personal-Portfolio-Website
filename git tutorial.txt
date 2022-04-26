@@ -1,0 +1,15 @@
+touch .gitignore #to avoid uploading unwanted files
+git config --global user.Purna
+git config --global user."purnamondal248@gmail.com"
+git init #initialization of git repository
+git add . #to include all the files of project excluding unwanted files
+git commit -m "Initial Commit" #to commit
+git status #just to see if working tree is clean or not
+ssh-keygen -t ed25519 -C "purnamondal248@gmail.com"
+cat <path to the public key> #we get key and add this in github account under ssh keys
+git remote add origin <ssh url.git>
+git push origin master
+git status #after adding new file
+git add . #to add to repository
+git commit -m "git tutorial(name of the file)"
+git push origin master
